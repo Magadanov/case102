@@ -18,8 +18,8 @@ import {
 } from "./models/data.interfaces";
 
 export default function Case102() {
-    const [startDate, setStartDate] = useState("2022-01-01");
-    const [endDate, setEndDate] = useState("2023-01-01");
+    const [startDate, setStartDate] = useState("");
+    const [endDate, setEndDate] = useState("");
     const [data, setData] = useState<DataI[] | null>(null);
     const [reasonData, setReasonData] = useState<ReasonDataI[] | null>(null);
     const [arrivedData, setArrivedData] = useState<ArrivedDataI[] | null>(null);
