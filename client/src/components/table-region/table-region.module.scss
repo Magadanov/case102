@@ -1,0 +1,57 @@
+.table-region {
+    box-sizing: border-box;
+    padding: 0 50px 20px;
+    height: 500px;
+    position: relative;
+    overflow-y: scroll;
+
+    .header {
+        margin: 0 !important;
+        padding: 20px 0;
+        background: #fff;
+        position: sticky;
+        top: 0;
+    }
+
+    table,
+    tr {
+        border-bottom: 1px solid rgb(109, 107, 107);
+        border-collapse: collapse;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    tr {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        td {
+            margin: 10px 0px;
+
+            span {
+                margin-left: 10px;
+            }
+        }
+
+        td:last-child {
+            grid-column: 2 / span 2;
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    #table-progress-bap {
+        align-self: center;
+        border-radius: 10px;
+        height: 10px;
+        background: rgb(239, 246, 255);
+        background: linear-gradient(
+            90deg,
+            rgba(239, 246, 255, 1) 0%,
+            rgba(236, 226, 111, 1) 40%,
+            rgba(254, 141, 141, 0.7371323529411764) 100%
+        );
+    }
+}

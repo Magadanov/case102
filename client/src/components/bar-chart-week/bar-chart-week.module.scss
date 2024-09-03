@@ -1,0 +1,9 @@
+.bar-chart-container {
+    flex: 1;
+    box-sizing: border-box;
+    .bar-chart {
+        height: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+}
